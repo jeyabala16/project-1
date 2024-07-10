@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Forms</title>
+    <style>
+        body {
+            background-color: rgb(245, 236, 228);
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            text-align: center;
+            color: rgb(60, 0, 109);
+        }
+        form {
+            color: rgb(60, 0, 109);
+            font-style: initial;
+            font-size: large;
+            text-align: center;
+            margin: 0 auto;
+            max-width: 400px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        form input[type="text"],
+        form input[type="password"],
+        form select,
+        form textarea {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: large;
+        }
+        form input[type="button"] {
+            background-color: rgb(60, 0, 109);
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: large;
+        }
+        form input[type="button"]:hover {
+            background-color: rgb(80, 0, 150);
+        }
+        .back-link {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .back-link a {
+            color: #333;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px 20px;
+            background-color: #fff;
+            border: 1px solid #333;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .back-link a:hover {
+            background-color: #333;
+            color: #fff;
+        }
+    </style>
+</head>
+<body background="WhatsApp Image 2024-07-08 at 2.50.46 PM (1).jpeg">
+    <h1>Login Form</h1>
+    <form>
+        <label for="firstname">Firstname:</label>
+        <input type="text" id="firstname" name="Firstname"/><br>
+        
+        <label for="lastname">Lastname:</label>
+        <input type="text" id="lastname" name="Lastname"/><br>
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password"><br>
+        
+        <label for="confirm-password">Confirm Password:</label>
+        <input type="password" id="confirm-password" name="Confirm_password"><br>
+        
+        <label>Language:</label><br>
+        <input type="checkbox" name="tamil"/> Tamil
+        <input type="checkbox" name="english"/> English<br>
+        
+        <label for="gender">Gender:</label><br>
+        <select id="gender" name="dropdown">
+            <option value="select" disabled selected>-select-</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="others">Others</option>
+        </select><br>
+        
+        <label for="comment">Comment:</label><br>
+        <textarea id="comment" rows="5" cols="30" name="Comment"></textarea><br>
+        
+        <input type="button" name="save" value="Save"/>
+    </form>
+    <div class="back-link">
+        <a href="main.html">Back</a>
+    </div>
+</body>
+</html>
