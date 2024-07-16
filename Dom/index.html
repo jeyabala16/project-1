@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Hi DOM</title>
+    </head><body>
+    <h1> The document object model</h1>
+    <h2>Create element</h2>
+    <p> create a element with some text</p>
+    <script>
+        const para=document.createElement("p");
+        para.innerText="this is the paragraph";
+        document.body.appendChild(para);
+
+        const div=document.createElement("div");
+        div.innerText="welcome all!!!!";
+        document.body.appendChild(div);
+    </script>
+    </body>
+</html>
